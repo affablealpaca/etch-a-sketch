@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #404040; */
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  padding: 1vh;
+  text-align: center;
+  font-family: Arial;
+}
+
+.header {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 2vh 0;
+  font-size: 2vh;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px; /* Set a maximum width for the content area */
+  margin: 0 auto; /* Center the content horizontally */
+  width: 100%; /* Ensure the content takes up the available space */
+  padding: 0 10px; /* Add some padding to the sides */
+  flex: 1;
+}
+
+.sketch-box {
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 15px solid #6f4e37;
+  border-radius: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 30vh;
+  margin: 15px 0;
+}
+
+.color-group,
+.function-group {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 100%;
+}
+
+.btnColors {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 0.5vh 0.75vh;
+  font-size: 1vh;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btnColors:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Lighten background color on hover */
+}
+
+.btnColors:active {
+  transform: translateY(1px); /* Add slight downward shift on click */
+}
+
+/* Specific button styles */
+#btnRed {
+  background-color: #ff0000ab;
+  color: #fff;
+}
+
+#btnRed:hover {
+  background-color: #ff0000cc; /* Lighten red background color on hover */
+}
+
+#btnGreen {
+  background-color: #00ff555e;
+  color: #0f1113;
+}
+
+#btnGreen:hover {
+  background-color: #00ff55cc; /* Lighten green background color on hover */
+}
+
+#btnBlue {
+  background-color: #007bff;
+  color: #0f1113;
+}
+
+#btnBlue:hover {
+  background-color: #007bffcc; /* Lighten blue background color on hover */
+}
+
+#btnBlack {
+  background-color: #1a1d20;
+  color: #fff;
+}
+
+#btnBlack:hover {
+  background-color: #1a1d20cc; /* Lighten black background color on hover */
+}
+
+#btnRandom {
+  background-image: linear-gradient(
+    to right,
+    #780206 0%,
+    #061161 51%,
+    #780206 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+
+#btnRandom:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#btnEraser {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+
+#btnEraser:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#btnReset {
+  background-image: linear-gradient(
+    to right,
+    #3494e6 0%,
+    #ec6ead 51%,
+    #3494e6 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+}
+
+#btnReset:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#add-Gridvalue {
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    #53346d 51%,
+    #000000 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+
+#add-Gridvalue:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  /* border: 1px solid rgb(243, 239, 239); */
+  flex: 1;
+  /* background-color: #686868; */
+}
+
+.input-area {
+  margin: 25px;
+}
+
+.status-area {
+  color: black;
+  margin: 1rem;
+}
